@@ -1,0 +1,25 @@
+{
+  "name": "pbt-todomvc-puppeteer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-transform-async-to-generator": "^7.1.0",
+    "@babel/preset-env": "^7.1.6",
+    "babel-7-jest": "^21.3.3",
+    "babel-jest": "^23.6.0",
+    "fast-check": "^1.7.1",
+    "jest": "^23.6.0",
+    "puppeteer": "^1.10.0"
+  },
+  "scripts": {
+    "test": "jest --detectOpenHandles"
+  },
+  "jest": {
+    "transform": {
+      ".js$": "babel-7-jest"
+    }
+  }
+}
